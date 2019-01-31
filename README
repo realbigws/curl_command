@@ -1,0 +1,15 @@
+#=================
+# Runnig example:
+#=================
+
+#-> 1. raptorx property
+./oneline_curl.sh -i example/1pazA.fasta -t property -o 1pazA_prop
+
+
+#-> 2. raptorx contact
+./oneline_curl.sh -i example/1pazA.fasta -t contact -o 1pazA_cont
+
+
+#-> 3. process URL
+./oneline_curl.sh -i example/1pazA.fasta -t contact -o 1pazA_cont -U example/1pazA.cont_url
+

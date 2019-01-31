@@ -1,0 +1,23 @@
+-----------------------------------------------------------------
+Explanation of files in seqid.all_in_one.zip,
+where seqid is a number assigned by CoinFold to the query sequence
+-----------------------------------------------------------------
+
+0README_total         : This README file.
+
+seqid.fasta           : The user input sequence in FASTA format.
+
+seqid.a2m             : Generated Multiple Sequence Alignment (MSA) in A2M format.
+
+seqid.contactmap.txt  : The predicted contact result file.
+
+seqid.png             : The predicted contact image file.
+
+models/               : The folder contains the predicted five 3D models.
+  0README             : The README file for the explanation of predicted models.
+  seqid_model_X.pdb   : The predicted models in PDB format, where X ranges from 1 to 5.
+  seqid.model_summary : The summary file contains the energy score from CNS_solver for each predicted 3D model.
+
+
+In this package, except the image file, all the other files are saved in plain text format.
+
