@@ -166,7 +166,7 @@ tmp=$server_type"_"$rand"_"$relnam
 mkdir -p $tmp
 
 # ---- get sequence -------#
-util/Verify_FASTA $input_fasta $tmp/$relnam.fasta
+cp $input_fasta $tmp/$relnam.fasta
 sequence=`tail -n1 $tmp/$relnam.fasta`
 
 
