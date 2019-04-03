@@ -187,7 +187,7 @@ broke=0
 while true
 do
 	#-> wget index file
-	wget -q -O $tmp/$relnam.tmp $job_url
+	curl $job_url -o $tmp/$relnam.tmp -s
 	reso=`grep "progressBar.set('value',0);" $tmp/$relnam.tmp | wc | awk '{print $1}'`
 	if [ $reso -ge 1 ]
 	then
@@ -216,7 +216,7 @@ timer=0
 while true
 do
 	#-> wget result file
-	wget -q -O $tmp/$relnam.zip $down_url
+	curl $down_url -o $tmp/$relnam.zip -s
 	reso=`head -n1 $tmp/$relnam.zip`
 	if [ "$reso" != "File not found." ]
 	then
